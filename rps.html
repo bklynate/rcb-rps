@@ -58,6 +58,30 @@
             losses++
             document.querySelector('#losses').innerHTML = losses;
             document.querySelector('#game').innerHTML="<p>You Lose!!</p>";
+          } else if(userGuess === 's' && computerGuess === 's'){
+            ties++
+            document.querySelector('#ties').innerHTML = ties;
+            document.querySelector('#game').innerHTML="<p>Tie Game</p>";
+          } else if(userGuess === 's' && computerGuess === 'p'){
+            wins++
+            document.querySelector('#wins').innerHTML = wins;
+            document.querySelector('#game').innerHTML="<p>You Win!!</p>";
+          } else if (userGuess === 's' && computerGuess === 'r'){
+            losses++
+            document.querySelector('#losses').innerHTML = losses;
+            document.querySelector('#game').innerHTML="<p>You Lose!!</p>";
+          } else if (userGuess === 'p' && computerGuess === 'r'){
+            wins++
+            document.querySelector('#wins').innerHTML = wins;
+            document.querySelector('#game').innerHTML="<p>You Win!!</p>";
+          } else if (userGuess === 'p' && computerGuess === 's'){
+            losses++
+            document.querySelector('#losses').innerHTML = losses;
+            document.querySelector('#game').innerHTML="<p>You Lose!!</p>";
+          } else if (userGuess === 'p' && computerGuess === 'p'){
+            ties++
+            document.querySelector('#ties').innerHTML = ties;
+            document.querySelector('#game').innerHTML="<p>Tied Game!!</p>";
           }
         }
       }
