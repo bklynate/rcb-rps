@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" id="scoreBox">
+          <p>Wins: <span id="wins">0</span></p>
+          <p>Losses: <span id="losses">0</span></p>
+          <p>Ties: <span id="ties">0</span></p>
+        </div>
+        <div class="col-md-7" id="instructions">
+          <p>Press [r]ock | [p]aper | [s]cissors to compete</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="game" class="text-center">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var wins = 0;
+      var ties = 0;
+      var losses = 0;
+
+      var computerChoices = ["r", "p", "s"];
+
+      document.onkeyup = function(event){
+        var newScoreInfo =
+            "<p>Wins: " + wins + "</p>\n" +
+            "<p>Losses: " + losses + "</p>\n" +
+            "<p>Ties: " + ties + "</p>";
+        var userGuess = event.key;
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
+
+        if(userGuess === "r" || userGuess === "p" || userGuess === "s") {
+          console.log(userGuess + " vs " + computerGuess)
+          if(userGuess === 'r' && computerGuess === 'r'){
+            ties++
+            document.querySelector('#ties').innerHTML = ties;
+            document.querySelector('#game').innerHTML="<p>Tie Game</p>";
+          } else if(userGuess === 'r' && computerGuess === 's'){
+            wins++
+            document.querySelector('#wins').innerHTML = wins;
+            document.querySelector('#game').innerHTML="<p>You Win!!</p>";
+          } else if (userGuess === 'r' && computerGuess === 'p'){
+            losses++
+            document.querySelector('#losses').innerHTML = losses;
+            document.querySelector('#game').innerHTML="<p>You Lose!!</p>";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
