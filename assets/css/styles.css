@@ -1,7 +1,6 @@
 body {
   font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../imgs/cubes.png);
-  margin-bottom: 150px;
 }
 
 html {
@@ -10,8 +9,10 @@ html {
 }
 
 #game {
-  margin-top: 150px;
+  margin-top: 120px;
   font-size: 3.9em;
+  margin: 0 auto;
+  margin-left: 50px;
 }
 
 #game, #scoreBox, #instructions {
@@ -23,22 +24,22 @@ html {
   margin-left: -20px;
 }
 
-#scoreBox, #instructions {
+#scoreBox {
   font-size: 1.5em;
-  width: 200px;
-  height: 200px;
   margin-top: 60px;
+  margin-left: 3%; 
 }
 
 #instructions {
-  margin-left: 10px;
-  width: 950px;
+  margin-top: 60px;
+  margin-left: 1%;
 }
 
 #instructions > p {
-  margin-top: 80px;
-  margin-left: 150px;
-  letter-spacing: 5px;
+  margin-top: 72px;
+  letter-spacing: 3.1px;
+  padding-bottom: 70px;
+  font-size: 1.3em;
 }
 
 #attn {
@@ -50,23 +51,12 @@ html {
  padding-top: 20px;
 }
 
-#game {
-  width: 1150px;
-  height: 200px;
-}
-
-#match {
-  margin-top: 50px;
-  width: 30px;
-  height: 30px;
-  background-color: #fff
-}
 
 #fights > p {
-  padding-top: 90px;
-  height: 50px;
+  padding-top: 50px;
   color: #555;
   font-size: 45px;
+  padding-bottom: 30px;
 }
 
 #game > p {
@@ -74,4 +64,5 @@ html {
   color: #555;
   letter-spacing: 15px;
   font-weight: bold;
+  padding-bottom: 50px;
 }
