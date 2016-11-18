@@ -16,7 +16,7 @@ html {
 
 #game, #scoreBox, #instructions {
   border-radius: 15px;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 #scoreBox, #instructions {
