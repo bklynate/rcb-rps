@@ -19,6 +19,10 @@ html {
   background-color: #fff;
 }
 
+#gameContainer {
+  margin-left: -20px;
+}
+
 #scoreBox, #instructions {
   font-size: 1.5em;
   width: 200px;
