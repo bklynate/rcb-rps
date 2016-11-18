@@ -13,13 +13,14 @@ html {
   margin-top: 150px;
   font-size: 3.9em;
 }
+
 #game, #scoreBox, #instructions {
   border-radius: 15px;
+  background-color: #eee;
 }
 
 #scoreBox, #instructions {
   font-size: 1.5em;
-  background-color: #fff;
   width: 200px;
   height: 200px;
   margin-top: 60px;
@@ -35,31 +36,35 @@ html {
   margin-left: 150px;
   letter-spacing: 5px;
 }
+
 #attn {
   color: red;
 }
+
 #scoreBox > p {
  margin-left: 45px;
  padding-top: 20px;
 }
 
 #game {
-  background-color: #fff;
   width: 1150px;
   height: 200px;
 }
+
 #match {
   margin-top: 50px;
   width: 30px;
   height: 30px;
   background-color: #fff
 }
+
 #fights > p {
   padding-top: 90px;
   height: 50px;
   color: #555;
   font-size: 45px;
 }
+
 #game > p {
   padding-top: 60px;
   color: #555;
