@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
   background-image: url(../imgs/ignasi_pattern_s.png);
   margin-bottom: 150px;
 }
@@ -29,9 +29,12 @@ html {
 
 #instructions > p {
   margin-top: 80px;
-  margin-left: 300px;
+  margin-left: 150px;
+  letter-spacing: 5px;
 }
-
+#attn {
+  color: red;
+}
 #scoreBox > p {
  margin-left: 45px;
  padding-top: 20px;
@@ -42,7 +45,21 @@ html {
   width: 1150px;
   height: 200px;
 }
-
+#match {
+  margin-top: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff
+}
+#fights > p {
+  padding-top: 90px;
+  height: 50px;
+  color: #555;
+  font-size: 45px;
+}
 #game > p {
-  padding-top: 60px
+  padding-top: 60px;
+  color: #555;
+  letter-spacing: 15px;
+  font-weight: bold;
 }

@@ -16,12 +16,13 @@
           <p>Ties: <span id="ties">0</span></p>
         </div>
         <div class="col-md-7" id="instructions">
-          <p>Press [r]ock | [p]aper | [s]cissors to compete</p>
+          <p><strong>Press: </strong>[<span id="attn"><strong>r</strong></span>]ock  -  [<span id="attn"><strong>p</strong></span>]aper  -  [<span id="attn"><strong>s</strong></span>]cissors to compete</p>
         </div>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <div class="match text-center"><span id="fights"><p>? vs ?</p></span></div>
             <div id="game" class="text-center">
 
             </div>
@@ -37,15 +38,11 @@
       var computerChoices = ["r", "p", "s"];
 
       document.onkeyup = function(event){
-        var newScoreInfo =
-            "<p>Wins: " + wins + "</p>\n" +
-            "<p>Losses: " + losses + "</p>\n" +
-            "<p>Ties: " + ties + "</p>";
         var userGuess = event.key;
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
 
         if(userGuess === "r" || userGuess === "p" || userGuess === "s") {
-          console.log(userGuess + " vs " + computerGuess)
+          document.querySelector('#fights').innerHTML = "<p>"+userGuess + " vs " + computerGuess+"</p>";
           if(userGuess === 'r' && computerGuess === 'r'){
             ties++
             document.querySelector('#ties').innerHTML = ties;
